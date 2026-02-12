@@ -40,7 +40,7 @@ const CommentArea = function (props) {
       {!props.bookID && <h4>Select a book to leave a comment or read its reviews!</h4>}
       {props.bookID && (
         <>
-          <h4 className="text-light text-center pt-3" style={{ marginTop: "0.55em", marginBottom: "1.25em" }}>
+          <h4 data-testid="selected-book-title" className="text-light text-center pt-3" style={{ marginTop: "0.55em", marginBottom: "1.25em" }}>
             {props.bookTitle}
           </h4>
           <CommentList commentsArray={commentsArray} getComments={getComments}></CommentList>

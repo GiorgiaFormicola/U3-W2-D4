@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 
 const SingleBook = function (props) {
   return (
-    <Col className="col-12 col-md-6 col-lg-4">
+    <Col className="col-12 col-md-6 col-lg-4" data-testid="book-card">
       <Card
         bg="dark"
         text="light"
